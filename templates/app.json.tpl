@@ -15,6 +15,10 @@
                { 
                   "name": "ELB_DNS",
                   "value": "${ELB_DNS_URL}"
+               },
+		{ 
+                  "name": "WEATHER_SERVICE_PORT",
+                  "value": "8080"
                }
             ],
  "links": [

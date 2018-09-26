@@ -4,7 +4,8 @@ data "template_file" "myapp-task-definition-template" {
   template               = "${file("templates/app.json.tpl")}"
  vars {
    #ELB_DNS_URL = "${replace("${aws_elb.myapp-elb.dns_name}", "https://", "")}"
-   ELB_DNS_URL = "${join(":", list("${aws_elb.myapp-elb.dns_name}", "8080"))}"	
+   #ELB_DNS_URL = "${join(":", list("${aws_elb.myapp-elb.dns_name}", "8080"))}"	
+   ELB_DNS_URL = "${aws_elb.myapp-elb.dns_name}"	
    #Name = "${join("-",list(var.environment-name, "frontend"))}"
  }
 
