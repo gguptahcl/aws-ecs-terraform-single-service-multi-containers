@@ -1,4 +1,4 @@
-# AWS Elastic Beanstalk Setup using Terraform
+# AWS ECS Cluster Setup using Terraform
 
 Purpose of this repository is to create an ECS Cluster and deploy the containers defined in task definition.Here we are deploying 2 containers "hello-world" and "weather-service" defined in a single task definition file.  "hello-world" and "weather-service" have been pushed to ECR repostory using "hello-world" (https://github.com/gguptahcl/hello-world.git) & "weather-service" (https://github.com/gguptahcl/weather-service.git) GIT projects
 
